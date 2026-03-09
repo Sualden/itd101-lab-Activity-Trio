@@ -55,6 +55,7 @@ If you want to connect to a different database or your own local PostgreSQL serv
 Open any of the Python files and look for the nodes list. Simply change the "host" value to your new IP address:
 Python
 
+
 nodes = [
     {
         "name": "My Custom Warehouse",  #<--- CHANGE THIS NAME!
