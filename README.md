@@ -57,14 +57,16 @@ Python
 
 nodes = [
     {
-        "name": "My Custom Warehouse",<--- CHANGE THIS NAME!
+        "name": "My Custom Warehouse",  #<--- CHANGE THIS NAME!
         "host": "192.168.X.X",  # <--- CHANGE THIS IP ADDRESS!
-        "port": 5432,<--- CHANGE THIS PORT!
-        "dbname": "my_database",<--- CHANGE THIS DATABASE NAME!
-        "user": "postgres",<--- CHANGE THIS USER!
-        "password": "my_password"<--- CHANGE THIS PASSWORD!
+        "port": 5432, #<--- CHANGE THIS PORT!
+        "dbname": "my_database", #<--- CHANGE THIS DATABASE NAME!
+        "user": "postgres", #<--- CHANGE THIS USER!
+        "password": "my_password" #<--- CHANGE THIS PASSWORD!
     }
 ]
+
+
 ▶️ Usage Instructions
 You can run any of the scripts directly from the terminal. Navigate to the folder containing the scripts and execute them using Python:
 To view all orders across the warehouses (Read):
