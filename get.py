@@ -2,21 +2,21 @@ import psycopg2
 
 nodes = [
     {
-        "name": "Manila Warehouse",
-        "host": "192.168.88.133",
-        "port": 5435,
-        "dbname": "manila_werehouse",   # <--- 1. Lowercase, 2. Spelled 'warehouse'
-        "user": "ken2",
-        "password": "pass2",
+        "name": "IloIlo Warehouse",
+        "host": "192.168.88.173",
+        "port": 1235,
+        "dbname": "iloilo_warehouse",  
+        "user": "postgres",
+        "password": "032805",
         "table": "orders"
     },
     {
-        "name": "Pasig Warehouse",
-        "host": "192.168.88.133",
-        "port": 5434,
-        "dbname": "pasig_werehouse", 
-        "user": "ken1",
-        "password": "pass1",
+        "name": "davao_southern_warehousee",
+        "host": "192.168.88.173",
+        "port": 1234,
+        "dbname": "davao_southern_warehouse", 
+        "user": "postgres",
+        "password": "032805",
         "table": "orders"
     }
 ]
@@ -33,7 +33,6 @@ for node in nodes:
         )
 
         cur = conn.cursor()
-        
         query = f"""
             SELECT o.order_id, c.fullName, o.order_total, o.order_status 
             FROM {node['table']} o
@@ -42,6 +41,7 @@ for node in nodes:
         cur.execute(query)
         rows = cur.fetchall()
 
+        # 3. Print the results
         print(f" Data from: {node['name']} ({node['host']}:{node['port']})")
         print(f"{'Order ID':<10} {'Customer Name':<20} {'Total':<10} {'Status'}")
         print("-" * 50)
