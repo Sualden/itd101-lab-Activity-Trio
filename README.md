@@ -1,7 +1,7 @@
 
 ITD101 Lab Activity: Distributed Database CRUD 🚀
 
-eam Members (Trio):
+Team Members (Trio):
 1. Sualden Sala
 2. Rasman Julsali
 3. Ryan-ken Bagiuo
